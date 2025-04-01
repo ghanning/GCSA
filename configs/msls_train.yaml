@@ -1,0 +1,24 @@
+data:
+  dataset: msls
+  desc_fn: global-feats-netvlad.h5
+  batch_size: 32
+  num_workers: 8
+model:
+  input_dim: 4096
+  proj_dim: 512
+  output_dim: 768
+  K: 319
+  L: 127
+  num_layers: 1
+  num_heads: 12
+  affinity: [positional-db, heading]
+  input_dropout: 0.2
+  attn_dropout: 0.2
+train:
+  learning_rate: 1e-4
+  lr_step: 1
+  lr_gamma: 0.9
+  weight_decay: 0.0
+  num_epochs: 5
+  freeze_input_proj: true
+  checkpoint: null

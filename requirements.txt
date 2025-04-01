@@ -1,0 +1,12 @@
+Cython
+h5py
+notebook
+numpy
+omegaconf
+pycolmap
+scikit-learn
+shapely
+torch
+tqdm
+wandb
+-e git+https://github.com/cvg/Hierarchical-Localization.git#egg=hloc
